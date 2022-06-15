@@ -1,0 +1,108 @@
+.emaillist{
+    display: flex;
+    flex-direction: column;
+}
+.emaillist__setting{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.emaillist__setting svg{
+    font-size: 18px;
+}
+
+.emaillist__settingRight{
+    display: flex;
+    align-items: center;
+}
+.emaillist__settingRight p{
+    font-size: 13px;
+}
+
+.emailtype{
+    display: flex;
+    align-items: center;
+    border-bottom: 1 px solid whitesmoke;
+}
+.emailtype > .emailtype__options{
+    display: flex;
+    align-items: center;
+    min-width: 230px;
+    padding: 0 10px;
+    cursor: pointer;
+    border-bottom: 3px solid white;
+}
+.emailtype > .emailtype__options svg{
+    font-size: 20px;
+    color: gray;
+    margin-right: 10px;
+}
+.emailtype > .emailtype__options p{
+    font-size: 15px;
+    color: gray;
+}
+.emailtype > .emailtype__options:hover{
+    background-color: whitesmoke;
+}
+.emailtype__options--active{
+    border-bottom: 3px solid #d93025 !important;
+}
+.emailtype__options--active svg,
+.emailtype__options--active p{
+    border-bottom: 3px solid #d93025 !important;
+    font-weight: bold;
+}
+
+.emailbody{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+    padding: 0 10px;
+    height: 40px;
+}
+
+.emailbody:hover{
+    box-shadow: 2px 2px 4px whitesmoke;
+    cursor: pointer;
+}
+.emailbody .emailbody_left{
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    flex: 20%;
+}
+.emailbody .emailbody_left svg{
+    margin-right: 14px;
+}
+
+.emailbody .emailbody_left h4{
+    font-size: 18px;
+    color: gray;
+    margin-right: 15px;
+}
+
+.emailbody .emailbody_middle{
+    display: flex;
+    align-items: center;
+    flex: 90%;
+}
+
+.emailbody .emailbody_middle p{
+    font-size: 12px;
+}
+
+.emailbody .emailbody_right{
+    display: flex;
+    align-items: center;
+    flex: 10%;
+}
+.emailbody .emailbody_right p{
+    font-size: 12px;
+}
+
+
+/* emailbody_middle_msg */
