@@ -1,6 +1,6 @@
 import React from 'react';
-import {Reorder, Search, HelpOutline, Setting, Apps, ExpandMore } from '@mui/icons-material';
-import { IconButton, Avatar } from '@mui/icons-material';
+import {Reorder, Search, HelpOutline, Apps, ExpandMore } from '@mui/icons-material';
+import { Avatar, IconButton } from '@mui/material';
 import './css/header.css';
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
                 <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="logo"/>
             </div>
             <div className="header__middle">
-                <div className="search_mail">
+                <div className="search__mail">
                     <IconButton>
                         <Search></Search>
                     </IconButton>
@@ -28,12 +28,12 @@ const Header = () => {
                     <HelpOutline></HelpOutline>
                 </IconButton>
                 <IconButton>
-                    <Setting></Setting>
+                    
                 </IconButton>
                 <IconButton>
                     <Apps></Apps>
                 </IconButton>
-                <Avatar></Avatar>
+                <Avatar />
             </div>
         </div>
     )

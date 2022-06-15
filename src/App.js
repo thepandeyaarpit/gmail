@@ -1,12 +1,14 @@
 import React from 'react';
 import Emaillist from './Emaillist';
-// import Header from './Header';
+import Header from './Header';
 import Sidebar from './Sidebar';
+// import './css/index.css';
+import './index.css';
 
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
+      <Header />
 
       <div className="app__body">
         <Sidebar />
