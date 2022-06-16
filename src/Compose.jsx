@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/compose.css';
-import { Close, Height, Remove } from '@mui/icons-material';
+import { ArrowDropDown, AttachFile, Close, Create, Delete, FormatColorText, Height, InsertEmoticon, Link, MoreVert, NoteAdd, PhonelinkLock, Photo, Remove } from '@mui/icons-material';
+// import { Link } from '@mui/material';
 
 
 function Compose() {
@@ -16,8 +17,32 @@ function Compose() {
                     <Close />
                 </div>
             </div>
-            <div className="compose_body"></div>
-            <div className="compose_footer"></div>
+            <div className="compose_body">
+                <div className="compose__body__form">
+                    <input type="email" placeholder="Reciepents" />
+                    <input type="text" placeholder="Subject" />
+                    <textarea rows="20"></textarea>
+                </div>
+            </div>
+            <div className="compose_footer">
+                <div className="compose_footer_left">
+                    <button type="submit">Send
+                        <ArrowDropDown />
+                    </button>
+                </div>
+                <div className="compose_footer_right">
+                    <FormatColorText />
+                    <Link />
+                    <AttachFile />
+                    <InsertEmoticon />
+                    <NoteAdd />
+                    <Photo />
+                    <PhonelinkLock />
+                    <Create />
+                    <MoreVert />
+                    <Delete />
+                </div>
+            </div>
         </div>
     )
 }
