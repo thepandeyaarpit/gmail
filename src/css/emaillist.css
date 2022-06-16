@@ -43,7 +43,7 @@
 }
 .emailtype > .emailtype__options p{
     font-size: 15px;
-    color: gray;
+    /* color: gray; */
 }
 .emailtype > .emailtype__options:hover{
     background-color: whitesmoke;
@@ -53,7 +53,7 @@
 }
 .emailtype__options--active svg,
 .emailtype__options--active p{
-    border-bottom: 3px solid #d93025 !important;
+    color: #d93025 !important;
     font-weight: bold;
 }
 
@@ -61,7 +61,7 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid whitesmoke;
-    padding: 0 10px;
+    padding: 0px 10px;
     height: 40px;
 }
 
@@ -76,13 +76,13 @@
     flex: 20%;
 }
 .emailbody .emailbody_left svg{
+    font-size: 18px;
+    color: gray;
     margin-right: 14px;
 }
 
 .emailbody .emailbody_left h4{
-    font-size: 18px;
-    color: gray;
-    margin-right: 15px;
+    font-size: 14px;
 }
 
 .emailbody .emailbody_middle{
@@ -90,19 +90,28 @@
     align-items: center;
     flex: 90%;
 }
-
+.emailbody .emailbody_middle .emailbody_middle_msg{
+    display: flex;
+    width: 90%;
+}
 .emailbody .emailbody_middle p{
-    font-size: 12px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px 20px;
+    max-width: 700px;
 }
 
 .emailbody .emailbody_right{
     display: flex;
     align-items: center;
     flex: 10%;
+    justify-content: flex-end;
+    font-weight: bold;
 }
 .emailbody .emailbody_right p{
     font-size: 12px;
 }
 
 
-/* emailbody_middle_msg */

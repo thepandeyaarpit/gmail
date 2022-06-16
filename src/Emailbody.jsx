@@ -2,7 +2,7 @@ import { CheckBoxOutlineBlank, StarBorder, LabelOutlined } from '@mui/icons-mate
 import React from 'react';
 import './css/emaillist.css';
 
-const Emailbody = () => {
+const Emailbody = (props) => {
   return (
     <div className='emailbody'>
         <div className='emailbody_left'>
@@ -11,15 +11,15 @@ const Emailbody = () => {
             <LabelOutlined />
 
 
-            <h4>Arpit Pandeya</h4>
+            <h4>{props.name}</h4>
         </div>
         <div className='emailbody_middle'>
             <div className='emailbody_middle_msg'>
-                <p><b>Subject</b>This is Message body</p>
+                <p><b>{props.subject}</b>{props.message}</p>
             </div>
         </div>
         <div className='emailbody_right'>
-            <p>2:30 PM</p>
+            <p>{props.time}</p>
         </div>
     </div>
   )

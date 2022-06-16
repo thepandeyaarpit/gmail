@@ -4,6 +4,7 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 // import './css/index.css';
 import './index.css';
+import Compose from './Compose';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Sidebar />
         <Emaillist />
       </div>
+
+      <Compose />
     </div>
   );
 }
