@@ -1,5 +1,5 @@
 import React from 'react';
-import {Reorder, Search, HelpOutline, Apps, ExpandMore } from '@mui/icons-material';
+import {Reorder, Search, HelpOutline, Apps, ExpandMore, Settings } from '@mui/icons-material';
 import { Avatar, IconButton } from '@mui/material';
 import './css/header.css';
 
@@ -28,7 +28,7 @@ const Header = () => {
                     <HelpOutline></HelpOutline>
                 </IconButton>
                 <IconButton>
-                    
+                    <Settings />
                 </IconButton>
                 <IconButton>
                     <Apps></Apps>

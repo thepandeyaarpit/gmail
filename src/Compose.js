@@ -2,9 +2,15 @@ import React from 'react';
 import './css/compose.css';
 import { ArrowDropDown, AttachFile, Close, Create, Delete, FormatColorText, Height, InsertEmoticon, Link, MoreVert, NoteAdd, PhonelinkLock, Photo, Remove } from '@mui/icons-material';
 // import { Link } from '@mui/material';
+import { useDispatch } from 'react-redux';
+import { closeSendMessage } from './features/mailSlice';
+
 
 
 function Compose() {
+
+    const dispatch = useDispatch();
+
     return(
         <div className="compose">
             <div className="compose_header">
@@ -14,7 +20,7 @@ function Compose() {
                 <div className="compose_header__right">
                     <Remove />
                     <Height />
-                    <Close />
+                    <Close onClick={()=>dispatch(closeSendMessage())} />
                 </div>
             </div>
             <div className="compose_body">
